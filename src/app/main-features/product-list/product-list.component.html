@@ -1,0 +1,21 @@
+<!--h1 *ngIf="userName !== ''">Hello {{userName}}!</h1-->
+
+
+
+
+
+<!--button
+[disabled]="isDisabled"
+[class.button-disabled]="isDisabled"
+(click)="onClick()"
+>Click Me</button>
+<p *ngIf="isClicked ">User has clicked the button</p-->
+<mat-spinner *ngIf="isLoading"></mat-spinner>  
+<app-product-list-item
+[products]="products"
+[ListTitle]="'Products'"
+(share)="onShare($event)"
+></app-product-list-item>
+
+
+

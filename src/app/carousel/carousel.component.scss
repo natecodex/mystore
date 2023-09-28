@@ -1,0 +1,19 @@
+.carousel {
+    width: 100px; /* Adjust the width as per your requirements */
+    height: 100px; /* Adjust the height as per your requirements */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-item.active {
+    opacity: 1;
+  }
+  

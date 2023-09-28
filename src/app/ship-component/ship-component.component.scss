@@ -1,0 +1,59 @@
+// Example SCSS for a carousel component
+.contact-info{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px;
+    background-color: #efefef;
+    border-radius: 1opx;
+    cursor: pointer;
+}
+
+.cards:hover{
+    background-color: #b8d4de;
+    transition: 0.4s ease;
+
+}
+.cards .icon{
+    font-size: 5px;
+    margin-bottom: 10px;
+}
+.cards h2{
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+}
+.cards p{
+    font-size:17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #5e5e5e;
+}
+
+.card-icon{
+    font-size: 28px;
+    background: #ff6348;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.4s linear;
+}
+
+
+
+  
+  

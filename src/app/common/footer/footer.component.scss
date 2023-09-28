@@ -1,0 +1,41 @@
+.footer {
+    background-color:black;
+    padding: 20px;
+    color: white;
+    border: black;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: white;
+    background-color: black;
+  }
+  
+  .footer-section {
+    margin-bottom: 20px;
+    background-color: black;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    background-color: black;
+  }
+  
+  .social-media a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    background-color: black;
+  }
+  
+  .footer-bottom {
+    margin-top: 0px;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+  }
+  
