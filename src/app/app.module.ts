@@ -18,6 +18,8 @@ import { HeaderComponent } from './header/header.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ShipComponentComponent } from './ship-component/ship-component.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { LoginComponent } from './auth/login/login.component';
+import { NotFoundErrorComponent } from './common/not-found-error/not-found-error.component';
 
 
 
@@ -35,7 +37,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     FooterComponent,
     HeaderComponent,
     CarouselComponent,
-    ShipComponentComponent
+    ShipComponentComponent,
+    LoginComponent,
+    NotFoundErrorComponent
   ],
   // register modules in your application
   imports: [
