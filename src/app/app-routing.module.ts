@@ -6,6 +6,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { NotFoundErrorComponent } from './common/not-found-error/not-found-error.component';
 import { ProductDetailComponent } from './main-features/product-detail/product-detail.component';
 import { MyCartsComponent } from './main-features/my-carts/my-carts.component';
+import { RegistrationComponent } from './common/registration/registration.component';
 
 const routes: Routes = [
   {path: '', component: ProductListComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'checkout', component: CheckoutComponent},
   {path: 'my-carts', component: MyCartsComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'registration', component: RegistrationComponent},
   {path: '**', component: NotFoundErrorComponent},
 ];
 

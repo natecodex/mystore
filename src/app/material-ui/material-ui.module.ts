@@ -16,6 +16,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -36,7 +38,9 @@ const modules = [
   BrowserAnimationsModule,
   BrowserModule,
   FormsModule,
-  HttpClientModule
+  HttpClientModule,
+  ReactiveFormsModule
+
   
   
 

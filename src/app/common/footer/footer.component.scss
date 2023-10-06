@@ -1,4 +1,4 @@
-.footer {
+/*.footer {
     background-color:black;
     padding: 20px;
     color: white;
@@ -37,5 +37,42 @@
     background-color: black;
     color: white;
 
+  }*/
+
+  footer {
+    position: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
   }
+  footer {
+    color: white;
+  }
+  
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  .social-media {
+    display: flex;
+  }
+  
+  .social-media a {
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    
+  }
+  
   

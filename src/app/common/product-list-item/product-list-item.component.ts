@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-product-list-item',
@@ -9,6 +10,7 @@ export class ProductListItemComponent {
 @Input() ListTitle = '';
 @Input() products = [];
 @Output() share = new EventEmitter();
+customOptions: OwlOptions;
 
 
 onShare(product: any) {
