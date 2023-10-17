@@ -1,12 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
   constructor(private http: HttpClient){}
-
+  private apiUrl = 'https://fakestoreapi.com/products';
   
   
   getProducts() {
@@ -30,5 +32,14 @@ export class ProductsService {
   addProductToCart(product: any) {
     localStorage.setItem("Cart", product);
     console.log('product successfully added');
+
+
+
   }
+ 
+  getProductDetails(productId: string): Observable<any> {
+    const url = `${this.apiUrl}/${productId}`;
+    return this.http.get<any>(url);
+  }
+
 }

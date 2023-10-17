@@ -11,6 +11,7 @@ export class ProductDetailComponent implements OnInit {
   productName = '';
   productId = '';
   productDesc = '';
+product: any;
   constructor(
     private route: ActivatedRoute,
     private productsService: ProductsService

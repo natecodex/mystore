@@ -1,1 +1,32 @@
-<h3>{{productName}}</h3>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-2">
+            <img class="product-image" src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+            <!--img [src]="product.image" alt="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" -->
+
+        </div>  
+        
+    </div> 
+
+    <div class="container">
+        <h3>{{productName}}</h3>
+        <h3>{{productDesc}}</h3>
+
+        <div class="button-container">
+            <button class="add-to-cart-button">Add to Cart</button>
+            <button class="like-button">Like</button>
+        </div>
+
+        <div class="quantity-button">
+            <button class="quantity-minus">-</button>
+            <input type="number" class="quantity-input" value="1">
+            <button class="quantity-plus">+</button>
+        </div>
+    </div>
+</body>
+</html>

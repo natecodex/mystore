@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-checkout',
@@ -8,16 +9,21 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class CheckoutComponent implements OnInit {
   @Input() fullName = '';
   @Output() fullNameChange = new EventEmitter<any>();
-  newFullName = 'Caleb';
-  firstName = '';
-  lastName = '';
-  adline1 ='';
-  adline2 ='';
-  city ='';
-  spr ='';
-  zp ='';
-  ct ='';
-  
+  newFullName = 'Nathaniel';
+  checkoutForm: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) {
+    this.checkoutForm = this.formBuilder.group({
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
+      adline1: ['', Validators.required],
+      adline2: [''],
+      city: ['', Validators.required],
+      spr: ['', Validators.required],
+      zp: ['', Validators.required],
+      ct: ['', Validators.required]
+    });
+  }
 
 
   ngOnInit(): void {

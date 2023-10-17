@@ -7,11 +7,12 @@ import { NotFoundErrorComponent } from './common/not-found-error/not-found-error
 import { ProductDetailComponent } from './main-features/product-detail/product-detail.component';
 import { MyCartsComponent } from './main-features/my-carts/my-carts.component';
 import { RegistrationComponent } from './common/registration/registration.component';
+import { authGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {path: '', component: ProductListComponent},
   {path: 'product/:id/:prod_title', component: ProductDetailComponent},
-  {path: 'checkout', component: CheckoutComponent},
+  {path: 'checkout', component: CheckoutComponent, canActivate:[authGuard]},
   {path: 'my-carts', component: MyCartsComponent},
   {path: 'login', component: LoginComponent},
   {path: 'registration', component: RegistrationComponent},

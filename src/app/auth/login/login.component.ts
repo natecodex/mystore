@@ -1,20 +1,32 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent {
-  username: string;
-  password: string;
+export class LoginComponent implements OnInit {
+[x: string]: any;
+  login: FormGroup;
+  submitted = false;
 
-  onSubmit() {
-    // Add your login logic here
-    console.log('Username:', this.username);
-    console.log('Password:', this.password);
+  constructor(private formBuilder: FormBuilder) { }
+
+  ngOnInit() {
+    this.login = this.formBuilder.group({
+      username: ['', Validators.required],
+      password: ['', [Validators.required, Validators.minLength(6)]]
+    });
   }
 
+  onSubmit() {
+    this.submitted = true;
 
+    if (this.login.invalid) {
+      return;
+    }
 
+    // Perform login logic here
+  }
 }
